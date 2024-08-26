@@ -56,18 +56,23 @@ header .logo {
   font-size: 50px;
   cursor: default;
   text-shadow: 3px 3px black;
+  color: white;
+}
+header .logo:hover {
+  cursor: pointer;
 }
 header .logo img {
   width: 40px;
+  margin-left: 10px;
 }
 header .logo span {
   color: blue;
 }
 
 header .getstarted button {
-  box-shadow: rgba(0, 0, 3, 5.95) 1.95px 1.95px 9.6px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
   padding: 10px 25px;
-  border: none;
+  border: 1px solid rgba(128, 128, 128, 0.356);
   border-radius: 5px;
   font-weight: 500;
   font-size: 20px;
@@ -107,7 +112,7 @@ header .title span::before {
   width: 80px;
   height: 14px;
   transform: skew(-39deg) translateX(-50%);
-  background: rgb(37, 248, 37);
+  background: rgb(43, 120, 221);
   z-index: -1;
 }
 
@@ -218,6 +223,7 @@ header .confirm-title i {
 section {
   text-align: center;
   padding: 40px 0px 40px 0px;
+  border-bottom: 1px solid rgba(128, 128, 128, 0.205);
 }
 
 /*MODAL*/
@@ -267,6 +273,15 @@ section {
   opacity: 0.7;
 }
 
+.modal input,
+.modal textarea {
+  background-color: rgba(0, 0, 0, 0.829);
+  color: white;
+  border: 1px solid rgba(128, 128, 128, 0.116);
+  padding: 10px;
+  font-size: 15px;
+  resize: none;
+}
 .buttons {
   display: flex;
   align-items: center;
@@ -291,7 +306,7 @@ section {
   cursor: pointer;
   transition: 0.5s;
   color: white;
-  border: 1px solid white;
+  border: 1px solid rgba(128, 128, 128, 0.116);
 }
 .cancel {
   padding: 10px 25px;
@@ -306,12 +321,12 @@ section {
   cursor: pointer;
   transition: 0.5s;
   color: white;
-  border: 1px solid white;
+  border: 1px solid rgba(128, 128, 128, 0.116);
 }
 
 /*FORM*/
 form {
-  margin-top: 50px;
+  margin-top: 20px;
   display: flex;
   align-items: center;
   flex-direction: column;
@@ -319,7 +334,6 @@ form {
 }
 form input,
 form textarea {
-  border: 1px solid black;
   margin: 5px;
   outline: none;
   border-radius: 5px;
@@ -368,14 +382,12 @@ form textarea {
   margin-top: 100px;
   position: absolute;
 }
-.about img {
-  /* position: absolute; */
-}
+
 /*Services*/
 .services {
   min-height: 85vh;
-
-  /* background: url(images/bg4.jpg); */
+  background-color: rgba(0, 0, 0, 0.938);
+  color: white;
 }
 
 .services h1 {
@@ -392,7 +404,7 @@ form textarea {
   font-weight: 900;
 }
 .services-image {
-  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  box-shadow: rgb(0, 0, 0) 0px 5px 15px;
   width: 700px;
   height: 500px;
 }
@@ -417,7 +429,7 @@ form textarea {
   box-shadow: rgba(0, 0, 0, 0.35) 1.95px 1.95px 2.6px;
   margin-top: 25px;
   padding: 10px 20px;
-  background-color: rgb(23, 29, 20);
+  background-color: rgb(43, 120, 221);
   color: white;
   border: none;
   border-radius: 5px;
@@ -575,7 +587,6 @@ form textarea {
 
 /* Footer */
 footer {
-  padding: 20px 0 20px 0;
   min-height: 25vh;
   display: flex;
   justify-content: center;
