@@ -107,7 +107,7 @@ header .title span::before {
   width: 80px;
   height: 14px;
   transform: skew(-39deg) translateX(-50%);
-  background: rgb(69, 70, 69);
+  background: rgb(37, 248, 37);
   z-index: -1;
 }
 
@@ -118,25 +118,32 @@ header .confirm-title {
   flex-direction: column;
   align-items: center;
   margin: 0;
-  margin-top: 300px;
+  margin-top: 100px;
   font-size: 20px;
   font-weight: 100;
 }
 
+header .confirm-title img {
+  height: 250px;
+}
+
 header .confirm-title span {
-  color: rgb(26, 199, 26);
+  color: rgb(45, 250, 45);
 }
 
 header .confirm-title p {
+  background-color: rgba(0, 0, 0, 0.651);
+  padding: 5px;
   color: white;
   margin-top: 30px;
-  font-size: 15px;
+  font-size: 18px;
   text-shadow: 1px 1px black;
   font-weight: 900;
 }
 header .confirm-title h1 {
+  margin-top: 30px;
   text-align: center;
-  text-shadow: 3px 3px black;
+  text-shadow: 2px 2px black;
 }
 
 header .confirm-title i {
@@ -210,7 +217,7 @@ header .confirm-title i {
 /*Section*/
 section {
   text-align: center;
-  padding: 20px 0px 20px 0px;
+  padding: 40px 0px 40px 0px;
 }
 
 /*MODAL*/
@@ -340,16 +347,43 @@ form textarea {
 }
 /*About*/
 .about {
-  min-height: 30vh;
-  /* background-color: #1b263b; */
+  min-height: 20vh;
   background-color: rgba(0, 0, 0, 0.938);
   color: white;
+  position: relative;
 }
 
+.about h1 {
+  font-size: 30px;
+}
+
+.about p {
+  width: 700px;
+  margin: auto;
+  padding: 20px 0px 20px 0px;
+  font-size: 17px;
+}
+
+.shape1-img {
+  margin-top: 100px;
+  position: absolute;
+}
+.about img {
+  /* position: absolute; */
+}
 /*Services*/
 .services {
   min-height: 85vh;
+
   /* background: url(images/bg4.jpg); */
+}
+
+.services h1 {
+  font-size: 30px;
+}
+.services p {
+  padding: 20px 0px 20px 0px;
+  font-size: 17px;
 }
 
 .services-title {
@@ -480,6 +514,7 @@ form textarea {
 .faqs {
   display: flex;
   justify-content: center;
+  margin-top: 100px;
   gap: 50px;
   min-height: 60vh;
   padding: 50px 270px 10px 270px;
@@ -501,12 +536,17 @@ form textarea {
   transition: 0.3s;
 }
 
+.faqs img {
+  height: 500px;
+}
+
 .faqs h1 {
   text-align: center;
   font-size: 30px;
   margin-bottom: 20px;
   color: white;
   font-family: "Luckiest Guy", cursive;
+  text-shadow: 1px 2px black;
 }
 
 .faqs .box h3 {
@@ -519,6 +559,7 @@ form textarea {
   text-transform: uppercase;
 }
 .faqs .box p {
+  text-shadow: 1px 2px black;
   width: 400px;
   margin-bottom: 10px;
   font-size: 15px;
